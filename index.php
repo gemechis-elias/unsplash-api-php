@@ -65,7 +65,7 @@ $unsplashAPI = new UnsplashAPI($accessKey);
 
 	<div class="gallery">
         <?php
-$images = $unsplashAPI->getImages(4);
+$images = $unsplashAPI->getImages(10);
         
 foreach ($images as $image) {
     $username = $image->user->username;
